@@ -1,0 +1,75 @@
+
+\documentclass[a4paper,10pt,reqno]{amsart}
+
+\usepackage[T1]{fontenc}
+
+\usepackage{mathdesign}
+\usepackage{tgheros}  %  the advanced helvet as it was nice.
+
+\usepackage{siunitx}
+
+
+% Redefine cite so that we get references in footnotes.
+\usepackage[
+backend=biber,
+citestyle=authoryear,
+bibstyle=authoryear-comp,
+sorting=none,
+firstinits=true,
+maxcitenames=2
+]{biblatex} %style=mla for footnotes.
+%\renewcommand{\cite}[1]{\footcite{#1}}
+\renewcommand{\cite}[1]{\parencite{#1}}
+
+\newcommand{\lettr}[1]{#1}
+
+\newcommand{\tmpsection}[1]{\subsubsection{#1}}
+
+\addbibresource{epilit.bib}
+% This has to go below fontenc for some reason
+\input{KnitrSettings}
+
+
+\usepackage{caption}
+\usepackage{verbatim, geometry, fancyhdr,  graphicx, xcomment, microtype, array}
+%\usepackage{amsmath}
+
+
+
+\usepackage{bm} % for \bm bold math command for matrices.
+
+\usepackage[pdftex,hidelinks]{hyperref}
+
+% for coloured tables
+\usepackage[table]{xcolor}    % loads also »colortbl«  
+%\usepackage(booktabs}
+
+
+\usepackage[utf8]{inputenc}
+
+
+\setcounter{tocdepth}{4} % make TOC go to subsubsection
+
+
+
+\begin{document}
+
+
+\title{A draft of my chapter}
+\author{Tim Lucas. \today}
+\date{}
+
+\maketitle
+%\tableofcontents
+
+\input{Chapter3.tex}
+
+
+
+
+
+\small
+\printbibliography 
+
+
+\end{document}

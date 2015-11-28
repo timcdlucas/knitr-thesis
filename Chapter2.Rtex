@@ -1,0 +1,89 @@
+
+\clearpage
+
+
+
+%%begin.rcode settings, echo = FALSE, cache = FALSE, message = FALSE, results = 'hide'
+
+
+# Set the cache path. If we're going to have 4 or so caches, wan't to do this explicitely.
+opts_chunk$set(cache.path = '.Ch2Cache/')
+
+# Read in the ggplot2 theme
+source('misc/ggplot2_theme.R')
+
+# Read in other knitr options.
+source('misc/KnitrOptions.R')
+
+%%end.rcode
+
+
+%%begin.rcode libs, cache = FALSE, result = FALSE
+
+# Plotting
+library(ggplot2)
+
+%%end.rcode
+
+
+\section{Abstract}
+
+The second chapter of my thesis.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+More text.
+
+
+\section{Methods}
+
+Here I describe my methods interspersed with the code that actually does it.
+
+
+
+%%begin.rcode
+
+data <- data.frame(response = rnorm(20), predictor = rnorm(20))
+
+model <- lm(response ~ predictor, data)
+
+%%end.rcode
+
+
+
+
+%%begin.rcode caption1String
+# Just defining my caption label here to avoid the long string in chunk options below.
+
+figCaption <- "
+Caption labels can be really long so they might want to be separate. 
+You can't have split lines in the knitr chunk options.
+You figure legends should be version controlled too!
+"
+
+figShort <- "A cruddy figure."
+
+
+%%end.rcode
+
+
+%%begin.rcode figPlots, fig.lp = 'f:', fig.height = 4, fig.cap = figCaption, fig.scap = figShort
+
+ggplot(data, aes(x = predictor, y = response)) +
+  geom_point() +
+  geom_smooth(method = 'lm')
+
+%%end.rcode
+
+\section{Methods}
+
+Remember to put results directly into text with \texttt{\\rinline}.
+My model for this chapter isn't great (p = \rinline{summary(model)$coefficients[2,4]}).
+

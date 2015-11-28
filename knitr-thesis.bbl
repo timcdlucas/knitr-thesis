@@ -1,0 +1,74 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{entry}{none}
+    \entry{xie2013dynamic}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=25ce25b9d444076e0963bcf9fa3a6f92}{Xie}{X\bibinitperiod}{Yihui}{Y\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=25ce25b9d444076e0963bcf9fa3a6f92}{Xie}{X\bibinitperiod}{Yihui}{Y\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{25ce25b9d444076e0963bcf9fa3a6f92}
+      \strng{fullhash}{25ce25b9d444076e0963bcf9fa3a6f92}
+      \field{sortinit}{0}
+      \field{labelyear}{2013}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Dynamic Documents with R and knitr}
+      \field{title}{Dynamic Documents with R and knitr}
+      \field{volume}{29}
+      \field{year}{2013}
+    \endentry
+    \entry{R}{manual}{}
+      \name{labelname}{1}{}{%
+        {{hash=1560de9032afa59ced97ed4094b89f57}{{R\bibnamedelimb Development\bibnamedelimb Core\bibnamedelimb Team}}{R\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=1560de9032afa59ced97ed4094b89f57}{{R\bibnamedelimb Development\bibnamedelimb Core\bibnamedelimb Team}}{R\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Vienna, Austria}%
+      }
+      \list{organization}{1}{%
+        {R Foundation For Statistical Computing}%
+      }
+      \strng{namehash}{1560de9032afa59ced97ed4094b89f57}
+      \strng{fullhash}{1560de9032afa59ced97ed4094b89f57}
+      \field{sortinit}{0}
+      \field{labelyear}{2010}
+      \field{datelabelsource}{}
+      \field{labeltitle}{{R}: {A} {L}anguage {A}nd {E}nvironment {F}or {S}tatistical {C}omputing}
+      \field{note}{ISBN 3-900051-07-0}
+      \field{title}{{R}: {A} {L}anguage {A}nd {E}nvironment {F}or {S}tatistical {C}omputing}
+      \field{year}{2010}
+      \verb{file}
+      \verb ResultStandardDeviation.pdf:imgs/ResultStandardDeviation.pdf:PDF;REM-methods.tex:REM-methods.tex:LaTeX;ResultStandardDeviation.pdf:PrettyThesis/.imgsArch/ResultStandardDeviation.pdf:PDF;REM-methods.tex:PrettyThesis/REM-methods.tex:LaTeX;Red List Terms & Conditions of Use.pdf:data/Chapter3/TERRESTRIAL_MAMMALS/Red List Terms & Conditions of Use.pdf:PDF;ResultStandardDeviation.pdf:home/tim/Dropbox/phd/Documents/thesis/PrettyThesis/.imgsArch/ResultStandardDeviation.pdf:PDF;ResultStandardDeviation.pdf:home/tim/Dropbox/phd/Documents/thesis/imgs/ResultStandardDeviation.pdf:PDF;Red List Terms & Conditions of Use.pdf:home/tim/Dropbox/phd/Documents/thesis/data/Chapter3/TERRESTRIAL_MAMMALS/Red List Terms & Conditions of Use.pdf:PDF;REM-methods.tex:home/tim/Dropbox/phd/Documents/thesis/REM-methods.tex:LaTeX;REM-methods.tex:home/tim/Dropbox/phd/Documents/thesis/PrettyThesis/REM-methods.tex:LaTeX
+      \endverb
+      \verb{url}
+      \verb Http://Www.R-Project.Org
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
