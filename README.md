@@ -3,6 +3,7 @@ Knitr Thesis
 
 
 This is a template thesis for using multiple knitted documents.
+It turns out there is a [fair bit of built in Knitr stuff](http://yihui.name/knitr/demo/child/) for this, but I haven't used any of that.
 
 It uses a UCL style.
 You will want to find one that matches your university.
